@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Music Generator</title>
+    <script src="https://unpkg.com/tone@14.8.49/build/Tone.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎵 Web Music Generator</h1>
+        <p id="status">Click the button to start the audio context and generate music.</p>
+        
+        <div class="controls">
+            <button onclick="Tone.start(); generateMusic()">Generate & Play</button>
+            <button onclick="stopMusic()" disabled id="stopButton">Stop</button>
+            <button onclick="downloadMusic()" disabled id="downloadButton">Download Sequence</button>
+        </div>
+
+        <pre id="outputLog"></pre>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
